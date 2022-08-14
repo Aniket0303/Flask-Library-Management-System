@@ -1,0 +1,36 @@
+<div class="modal fade" id="returnBookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookModalLabel">Return Book</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action='./return-book' method="POST">
+
+                        
+
+                        <label class="form-label">Select Book:</label>
+                        <select name="book_name" class="custom-select form-control" id="book_name1">
+                            <option selected>Books to return</option>
+                            {% for book in books_to_return %}
+                                <option value={{book.id}}>{{ book.title }}</option>
+                            {% endfor %}
+                        </select>
+                        <label class="form-label">Select Member:</label>
+                        <select name="member_name" class="custom-select form-control" id="member_name1">
+                            <option selected>Members</option>
+                        </select>
+
+                        <input type="checkbox" name="paid" class="form-check-input" id="paidCheck">
+                        <label class="form-check-label" for="paidCheck">Paid</label>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Return</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

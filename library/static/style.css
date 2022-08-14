@@ -1,0 +1,68 @@
+header {
+  background-color: #0d6efd;
+}
+.nav-link {
+  color: white;
+  margin-right: 10px;
+}
+.nav-link:hover {
+  color: rgb(224, 218, 238);
+}
+
+.mrbt-2{
+    margin-bottom: 2rem;
+}
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.m {
+  margin: 1rem 0 0 1rem;
+  position: relative;
+  left: 70%;
+}
+.action {
+  width: 270px;
+}
+
+.table {
+  margin-top: 2rem;
+}
+.table-id{
+  padding-left: 2.5rem !important;
+}
+
+.empty-text{
+  margin-top: 2rem;
+  font-size: 2rem; 
+  font-weight: 700;
+}
+.report{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  list-style: circle;
+}
+@media screen and (max-width: 600px) {
+  .m {
+      left: 25%;
+  }
+
+  .nav-link{
+      margin : 0;
+    }
+    .table-id{
+      padding-left: 10px !important ;
+  }
+  .action {
+    width: 100px;
+}
+
+.action .btn {
+    margin-bottom: 10px;
+}
+}
